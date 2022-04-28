@@ -24,13 +24,13 @@
 -	 Calculate the accuracy score of the model
 -	Generate a confusion matrix
 -	Print the classification report
-### RandomOverSampler (random selection from minor class and adds to training set until both classifications are equal; the results classified 51,366 records each as high/low; the balanced accuracy score was 64%; the ‘high risk’ precision rate [pr] was only 1% with recall 66% while ‘low risk’ pr was 100% with a  recall 62%):
+### RandomOverSampler (random selection from minor class and adds to training set until both classifications are equal; the results classified 51,366 records each as high/low; the balanced accuracy score was 66%; the ‘high risk’ precision rate [pr] was only 1% with recall 71% while ‘low risk’ pr was 100% with a  recall 60%):
 
 ![](https://github.com/Beetleee/Credit_Risk_Analysis/blob/main/Resources/Plot4.png)
 
 ![](https://github.com/Beetleee/Credit_Risk_Analysis/blob/main/Resources/Plot5.png)
 
-### SMOTE (synthetic minority oversampling technique -which increases the size of the minor class by creating new values based on neighbor effect instead of random selection; the results show a slight improvement in the balanced accuracy score to 65.1%, the ‘high risk’ pr was only 1% with a recall of 61%, ‘low risk’ pr was 100% and improved recall of 69%):
+### SMOTE (synthetic minority oversampling technique -which increases the size of the minor class by creating new values based on neighbor effect instead of random selection; the results show a slight improvement in the balanced accuracy score to 66%, the ‘high risk’ pr was only 1% with a recall of 63%, ‘low risk’ pr was 100% and improved recall of 69%):
 
 ![](https://github.com/Beetleee/Credit_Risk_Analysis/blob/main/Resources/Plot6.png)
 
@@ -62,18 +62,20 @@ Compare two new Machine Learning models that reduce bias to predict credit risk 
 -	Calculate the balanced accuracy score
 -	Generate a confusion matrix
 -	Generate a classification report
------------------------------------------------------------------------------------------------------------------------------------
-## Deliverable 4: Analysis
-### BalancedRandomForestClassifier (two trees equal in both size and to the minor class are built to represent one for the major class and one for the minor class; the balanced accuracy score for this increased to 78.9% over the other models; the ‘high risk’ pr increased to 3% with recall of 70%, and ‘low risk’ pr was 100% with recall of 87%; the top feature importance was “total_rec_prncy” at 7.9% of the total.
+
+### BalancedRandomForestClassifier (two trees equal in both size and to the minor class are built to represent one for the major class and one for the minor class; the balanced accuracy score for this increased to 78.8% over the other models; the ‘high risk’ pr increased to 4% with recall of 67%, and ‘low risk’ pr was 100% with recall of 91%; the top feature importance was “total_rec_prncy” at 7.9% of the total.
 
 ![](https://github.com/Beetleee/Credit_Risk_Analysis/blob/main/Resources/Plot12.png)
 
 ![](https://github.com/Beetleee/Credit_Risk_Analysis/blob/main/Resources/Plot13.png)
 
-### EasyEnsembleClassifier (model based on individual decisions being combined to classify new examples;  the balanced accuracy score for this increased to 93% over the other models; the ‘high risk’ pr is still low, but increased to 7% with recall of 91% giving this model the best score yet, and ‘low risk’ pr was 94% with 100% precision
+![](https://github.com/Beetleee/Credit_Risk_Analysis/blob/main/Resources/Plot14.5.png)
+
+### EasyEnsembleClassifier (model based on individual decisions being combined to classify new examples;  the balanced accuracy score for this increased to 93% over the other models; the ‘high risk’ pr is still low, but increased to 7% with recall of 91% giving this model the best score yet, and ‘low risk’ pr was 100% with 94% precision
 ![](https://github.com/Beetleee/Credit_Risk_Analysis/blob/main/Resources/Plot14.png)
 
 ![](https://github.com/Beetleee/Credit_Risk_Analysis/blob/main/Resources/Plot15.png)
+-----------------------------------------------------------------------------------------------------------------------------------
+## Deliverable 4: Analysis
 
-## Summary:
-### Although all of the models had poor precision with predicting high risk credit scores, after reviewing the performance of all of the models, I found the EasyEnsembleClassifier had the best precision (9%), accuracy (93.2%), recall (92%) rates of all in the prediction of “high risk” applicants. If the crediting company needs a model and can handle the error rates from the statistical data I was able to generate from the usage of these models, then this model would be the one I would choose.
+### Although all of the models had poor precision with predicting high risk credit scores, after reviewing the performance of all of the models, I found the EasyEnsembleClassifier had the best precision (7%), accuracy (93%), recall (91%) rates of all in the prediction of “high risk” applicants. If the crediting company needs a model and can handle the error rates from the statistical data I was able to generate from the usage of these models, then this model would be the one I would choose.
