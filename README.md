@@ -69,7 +69,7 @@ Compare two new Machine Learning models that reduce bias to predict credit risk 
 
 ![](https://github.com/Beetleee/Credit_Risk_Analysis/blob/main/Resources/Plot13.png)
 
-![](https://github.com/Beetleee/Credit_Risk_Analysis/blob/main/Resources/Plot14.5.png)
+![](https://github.com/Beetleee/Credit_Risk_Analysis/blob/main/Resources/Plot14_5.png)
 
 ### EasyEnsembleClassifier (model based on individual decisions being combined to classify new examples;  the balanced accuracy score for this increased to 93% over the other models; the ‘high risk’ pr is still low, but increased to 7% with recall of 91% giving this model the best score yet, and ‘low risk’ pr was 100% with 94% precision
 ![](https://github.com/Beetleee/Credit_Risk_Analysis/blob/main/Resources/Plot14.png)
