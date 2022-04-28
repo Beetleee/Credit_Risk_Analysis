@@ -63,7 +63,7 @@ Compare two new Machine Learning models that reduce bias to predict credit risk 
 -	Generate a confusion matrix
 -	Generate a classification report
 
-### BalancedRandomForestClassifier (two trees equal in both size and to the minor class are built to represent one for the major class and one for the minor class; the balanced accuracy score for this increased to 78.8% over the other models; the ‘high risk’ pr increased to 4% with recall of 67%, and ‘low risk’ pr was 100% with recall of 91%; the top feature importance was “total_rec_prncy” at 7.9% of the total.
+### BalancedRandomForestClassifier (two trees equal in both size and to the minor class are built to represent one for the major class and one for the minor class; the balanced accuracy score for this increased to 78.8% over the other models; the ‘high risk’ pr increased to 4% with recall of 67%, and ‘low risk’ pr was 100% with recall of 91%; the top feature importance was “total_rec_prncy” at 7.4% of the total.
 
 ![](https://github.com/Beetleee/Credit_Risk_Analysis/blob/main/Resources/Plot12.png)
 
